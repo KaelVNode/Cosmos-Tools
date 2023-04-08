@@ -17,7 +17,7 @@ nibid config chain-id nibiru-itn-1
 nibid config broadcast-mode block
 nibid config keyring-backend file
 ```
-## import your wallet if you not instal nibiru node
+## import your wallet if you not install nibiru node
 
 ```
 nibid keys add YOURWALLETNAME --recover
