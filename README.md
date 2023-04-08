@@ -162,7 +162,7 @@ txhash: 11A3D0045FCD92BC453CE2D439305D25DDA0609C2DA85CD33DB840C9B2556D67
 
 ### Use the following command to get your `Code Id` information.
 ```
-nibid query wasm code-info CODEIDYAZIN
+nibid query wasm code-info CODEID
 ```
 
 ### Example command:
