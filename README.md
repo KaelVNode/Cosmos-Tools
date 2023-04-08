@@ -177,4 +177,3 @@ nibid query wasm code-info 279
 
 ### If you have any questions, you can ask on discord. : https://discord.gg/EPF8ZxD9zP
 
-### BlackOwl Twitter : https://twitter.com/brsbtc 
