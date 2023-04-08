@@ -5,7 +5,7 @@
 ![nit-2-banner](https://user-images.githubusercontent.com/107190154/230292252-9282d47f-814f-4f33-90e4-cbe959aef7c3.jpg)
 
 ## Type the commands step by step into the terminal.
-**Note: You can also do this on a server where Nibiru is not installed. If you are doing this on a server where Nibiru is not installed, don't forget to import your wallet.**
+**Note: You can also do this on a server where Nibiru is not installed.**
 
 ```
 curl -s https://get.nibiru.fi/! | bash
@@ -16,7 +16,10 @@ nibid config node https://rpc.itn-1.nibiru.fi:443
 nibid config chain-id nibiru-itn-1
 nibid config broadcast-mode block
 nibid config keyring-backend file
+nibid keys add YOURWALLETNAME --recover
 ```
+
+**After the last command, the wallet will ask for your seed phrases. Type your words, set your password and press enter.**
 
 ## `nibidcontract` We create a folder and download our `cw1_whitelist.wasm` file there.
 
@@ -153,10 +156,20 @@ txhash: 11A3D0045FCD92BC453CE2D439305D25DDA0609C2DA85CD33DB840C9B2556D67
 <img width="453" alt="asdasda" src="https://user-images.githubusercontent.com/107190154/230312457-aa4270ab-6f26-4aff-92eb-bae8d956be76.png">
 
 ### Use the following command to get your `Code Id` information.
-> Don't forget to type "TXHASH".
 ```
-nibid q tx TXHASH -o json |  jq -r '.raw_log'
+nibid query wasm code-info CODEIDYAZIN
 ```
+
+### Example command:
+```
+nibid query wasm code-info 279
+```
+
+### Example output:
+
+![image](https://user-images.githubusercontent.com/107190154/230309945-5e540a62-014d-427f-bbcb-3aa35c392dd0.png)
+
+
 ### If you have any questions, you can ask on discord. : https://discord.gg/EPF8ZxD9zP
 
 ### BlackOwl Twitter : https://twitter.com/brsbtc 
